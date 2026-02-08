@@ -1,22 +1,23 @@
-# Use Ubuntu-based Apache2 image
+# frontend/Dockerfile
 FROM ubuntu/apache2:2.4-20.04_beta
 
-# Remove default files (optional)
+# Remove default files as root
 RUN rm -rf /var/www/html/*
 
-# Create a non-root user
-RUN useradd -m WebUI
-USER WebUI
+# Copy website files as root
+COPY ./html/ /var/www/html/
 
-# Set working directory to Apache's web root
+# Create non-root user
+#RUN useradd -m WebUI
+
+# Give WebUI ownership of Apache directories
+#RUN mkdir -p /var/run/apache2 /var/lock/apache2 \
+#    && chown -R WebUI:WebUI /var/www/html /var/run/apache2 /var/lock/apache2
+
+# Switch to non-root
+#USER WebUI
+
 WORKDIR /var/www/html
-
-# Copy your website files into Apache root
-COPY ./html/ .
-
-# Expose port 80
 EXPOSE 80
 
-# Start Apache in the foreground
 CMD ["apache2-foreground"]
-
