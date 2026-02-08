@@ -1,0 +1,12 @@
+# Ignore Dockerfile and this .dockerignore itself
+Dockerfile
+.dockerignore
+
+# Ignore logs, temporary, or editor files
+*.log
+*.swp
+*.tmp
+*.bak
+
+# Ignore node_modules if you ever add JS packages
+node_modules
