@@ -1,0 +1,39 @@
+# ==========================================
+# Component:   Backend Deployment
+# ==========================================
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend
+  labels:
+    app: backend
+    tier: api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: backend
+  template:
+    metadata:
+      labels:
+        app: backend
+        tier: api
+    spec:
+      containers:
+      - name: backend
+        image: awaisumarhayatofficial/backend:latest
+        imagePullPolicy: Always
+        ports:
+        - name: api-port
+          containerPort: 80
+        env:
+        - name: REDIS_HOST
+          value: "redis" # ClusterIP service name of Redis
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "128Mi"
+          limits:
+            cpu: "250m"
+            memory: "512Mi"
