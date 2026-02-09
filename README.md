@@ -1,4 +1,4 @@
-# 🚀 GitHub Actions CI/CD with Kubernetes Deployment
+# GitHub Actions CI/CD with Kubernetes Deployment
 
 Automate your CI/CD pipeline using GitHub Actions and deploy your application seamlessly to a Kubernetes cluster.
 
@@ -144,7 +144,7 @@ kubectl apply -f backend-service.yaml
 kubectl apply -f redis-deployment.yaml   
 kubectl apply -f redis-service.yaml
 ```
-   
+ 
 
 ### 3. Test the Application
 
@@ -261,6 +261,8 @@ kubectl get svc
 
 - The GitHub Actions workflow will automatically run on pushes to the `main` branch.
 
+
+
 ## Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request for any improvements or suggestions.
@@ -292,7 +294,7 @@ Contributions are welcome! Please open an issue or submit a pull request for any
 ---
 
 **Note:** Replace `your-username` and `your-dockerhub-username` with your actual GitHub and Docker Hub usernames respectively.
----
+
 
 ## Additional Resources
 
@@ -302,8 +304,13 @@ Contributions are welcome! Please open an issue or submit a pull request for any
 
 ---
 
+
+
+
+
+
 ````md
-# 🚀 Mobile Tracking App – Kubernetes Deployment Guide
+# Mobile Tracking App – Kubernetes Deployment Guide
 
 This project demonstrates complete **Docker + Kubernetes + Vagrant based deployment** for a Frontend + Backend application.
 
@@ -318,7 +325,7 @@ It includes:
 
 ---
 
-# 📦 Project Architecture
+# Project Architecture
 
 Frontend (NodePort 30011)
         ↓
@@ -328,7 +335,7 @@ Database / Redis
 
 ---
 
-# 🐳 Docker Commands
+# Docker Commands
 
 ## Build Images
 ```bash
@@ -385,7 +392,7 @@ kubeadm join <master-ip>:6443 --token <token> --discovery-token-ca-cert-hash <ha
 
 ---
 
-# 🚀 Deploy Application
+#  Deploy Application
 
 ## Apply manifest
 
