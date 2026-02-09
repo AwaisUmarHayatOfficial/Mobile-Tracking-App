@@ -309,10 +309,6 @@ Contributions are welcome! Please open an issue or submit a pull request for any
 
 
 
-
-
-
-````md
 # Mobile Tracking App – Kubernetes Deployment Guide
 
 This project demonstrates complete **Docker + Kubernetes + Vagrant based deployment** for a Frontend + Backend application.
@@ -528,9 +524,8 @@ kubectl port-forward svc/frontend-service 8080:80
 # Maintainer
 
 **Awais Umar Hayat**
+
 DevOps & Cloud Engineer
 
 GitHub: [https://github.com/awaisumarhayatofficial](https://github.com/awaisumarhayatofficial)
-
-```
 
