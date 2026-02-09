@@ -48,12 +48,12 @@ github-actions-kubernetes/
 │   └── workflows/
 │       └── ci-cd.yaml          # GitHub Actions workflow
 ├── .gitignore                  # Files and directories to ignore in Git
-├── .git                        # Files and directories to ignore in Git
+├── .git                        
 ├── README.md                   # Project documentation
 ├── frontend                    # Frontend application
 │   └── html/                   # Project Code
 │   └── Dockerfile              # Containerized Frontend application
-├── backend                     
+├── backend                     # Backend application
 │   └── app/                    # Project Code
 │   └── src
 │   └── Dockerfile              # Containerized backend application
