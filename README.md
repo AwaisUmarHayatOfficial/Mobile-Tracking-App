@@ -50,8 +50,6 @@ Mobile-Tracking-App/
 ├── .gitignore                  # Files and directories to ignore in Git
 ├── .git                        # Files and directories to ignore in Git
 ├── README.md                   # Project documentation
-├── KubernetesGuide.md          # Kubernetes CLuster Setup Guide                              
-├── VagrantGuide.md             # Vagrant Setup Guide 
 ├── frontend                    # Frontend application
 │   └── html/                   # Project Code
 │   └── Dockerfile              # Containerized Frontend application
@@ -67,6 +65,13 @@ Mobile-Tracking-App/
 ├── redis-deployment.yaml       # Kubernetes Redis Deployment manifest
 ├── redis-service.yaml          # Kubernetes Redis Service manifest
 ├── docker-compose.yml          # Run Project locally with docker compose
+├── doc                         # Documents Guide
+    └── cicd_document.pdf  
+    └──   virtualbox_vagrant_setup.pdf            
+    └──   kubernetes_cluster_setup.pdf  
+    └──   KubernetesGuide.md  
+    └──   VagrantGuide.md  
+    └──   virtualbox_vagrant_setup.pdf                    
 
 ```
 

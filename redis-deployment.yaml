@@ -1,7 +1,3 @@
-# ==========================================
-# Component:   Redis Deployment
-# ==========================================
-
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -24,7 +20,6 @@ spec:
         ports:
         - name: redis-port
           containerPort: 6379
-        # Professional Tip: Resources limits for Redis
         resources:
           requests:
             cpu: "100m"

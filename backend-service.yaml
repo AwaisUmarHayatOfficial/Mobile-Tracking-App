@@ -1,7 +1,3 @@
-# ==========================================
-# Component:   Backend Service (NodePort)
-# ==========================================
-
 apiVersion: v1
 kind: Service
 metadata:

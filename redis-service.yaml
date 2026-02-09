@@ -1,11 +1,7 @@
-# ==========================================
-# Component:   Redis Service (Internal)
-# ==========================================
-
 apiVersion: v1
 kind: Service
 metadata:
-  name: redis # Yehi naam Backend ki env mein REDIS_HOST ki jagah use ho raha hai
+  name: redis 
 spec:
   selector:
     app: redis

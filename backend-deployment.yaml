@@ -1,7 +1,3 @@
-# ==========================================
-# Component:   Backend Deployment
-# ==========================================
-
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -29,7 +25,7 @@ spec:
           containerPort: 80
         env:
         - name: REDIS_HOST
-          value: "redis" # ClusterIP service name of Redis
+          value: "redis" 
         resources:
           requests:
             cpu: "100m"
