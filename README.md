@@ -523,9 +523,5 @@ kubectl port-forward svc/frontend-service 8080:80
 
 # Maintainer
 
-**Awais Umar Hayat**
-
-DevOps & Cloud Engineer
-
 GitHub: [https://github.com/awaisumarhayatofficial](https://github.com/awaisumarhayatofficial)
 

@@ -348,10 +348,6 @@ kubectl delete -f manifest.yaml
 
 # Maintainer
 
-Awais Umar Hayat
-
-Senior DevOps & Cloud Engineer
-
 GitHub: [https://github.com/awaisumarhayatofficial](https://github.com/awaisumarhayatofficial)
 
 ---
