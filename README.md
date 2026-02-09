@@ -43,7 +43,7 @@ cd Mobile-Tracking-App
 Here's the layout of the repository:
 
 ```
-github-actions-kubernetes/
+Mobile-Tracking-App/
 ├── .github/
 │   └── workflows/
 │       └── ci-cd.yaml          # GitHub Actions workflow
