@@ -64,7 +64,7 @@ Mobile-Tracking-App/
 ├── backend-service.yaml        # Kubernetes Backend Service manifest
 ├── redis-deployment.yaml       # Kubernetes Redis Deployment manifest
 ├── redis-service.yaml          # Kubernetes Redis Service manifest
-
+├── docker-compose.yml          # Run Project locally with docker compose
 ```
 
 ### 3. Configure Docker and Kubernetes Secrets
