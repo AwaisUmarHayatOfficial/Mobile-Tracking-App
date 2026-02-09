@@ -53,8 +53,17 @@ jobs:
 
       - name: Trivy Scan - Backend
         run: trivy image backend:scan
+  
+  docker-build-image:
+      runs-on: self-hosted
+      needs: [build-test, trivy-security-scan]
+      steps:
+      - name: Build Docker Images
+        run: |
+          docker build -t awaisumarhayatofficial/frontend:latest ./frontend
+          docker build -t awaisumarhayatofficial/backend:latest ./backend
 
-  docker-push:
+  docker-push-image:
     runs-on: self-hosted
     needs: [build-test, trivy-security-scan]
     steps:
@@ -67,11 +76,6 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      - name: Build Docker Images
-        run: |
-          docker build -t awaisumarhayatofficial/frontend:latest ./frontend
-          docker build -t awaisumarhayatofficial/backend:latest ./backend
-
       - name: Push Docker Images
         run: |
           docker push awaisumarhayatofficial/frontend:latest
@@ -79,7 +83,7 @@ jobs:
 
   deploy:
     runs-on: self-hosted
-    needs: docker-push
+    needs: docker-push-image
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
@@ -97,3 +101,4 @@ jobs:
           kubectl apply -f backend-service.yaml    
           kubectl apply -f redis-deployment.yaml   
           kubectl apply -f redis-service.yaml
+
