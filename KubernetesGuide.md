@@ -1,6 +1,4 @@
-
-````md
-# 🚀 Kubernetes Installation Guide on Ubuntu 24.04
+#  Kubernetes Installation Guide on Ubuntu 24.04
 
 This document provides a complete step-by-step guide to install and configure a **Kubernetes cluster** on Ubuntu 24.04 using:
 
@@ -348,10 +346,12 @@ kubectl delete -f manifest.yaml
 ---
 
 
-# 👨‍💻 Maintainer
+# Maintainer
 
 Awais Umar Hayat
-Senior DevOps & Cloud CyberSecurity Engineer
+
+Senior DevOps & Cloud Engineer
+
 GitHub: [https://github.com/awaisumarhayatofficial](https://github.com/awaisumarhayatofficial)
 
 ```

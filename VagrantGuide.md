@@ -1,4 +1,3 @@
-````md
 #  Vagrant Kubernetes Lab Setup
 
 This document describes a **Vagrant-based lab environment** for Kubernetes on Ubuntu 24.04.  
