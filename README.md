@@ -46,27 +46,27 @@ Here's the layout of the repository:
 Mobile-Tracking-App/
 ├── .github/
 │   └── workflows/
-│       └── ci-cd.yaml          # GitHub Actions workflow
-├── .gitignore                  # Files and directories to ignore in Git
-├── .git                        # Files and directories to ignore in Git
-├── README.md                   # Project documentation
-├── frontend                    # Frontend application
-│   └── html/                   # Project Code
-│   └── Dockerfile              # Containerized Frontend application
+│       └── ci-cd.yaml                     # GitHub Actions workflow
+├── .gitignore                             # Files and directories to ignore in Git
+├── .git                                   # Files and directories to ignore in Git
+├── README.md                              # Project documentation
+├── frontend                               # Frontend application
+│   └── html/                              # Project Code
+│   └── Dockerfile                         # Containerized Frontend application
 ├── backend                     
-│   └── app/                    # Project Code
+│   └── app/                               # Project Code
 │   └── src
-│   └── Dockerfile              # Containerized backend application
+│   └── Dockerfile                         # Containerized backend application
 ├── Vagrantfile
-├── frontend-deployment.yaml    # Kubernetes Frontend Deployment manifest
-├── frontend-service.yaml       # Kubernetes Frontend Service manifest
-├── backend-deployment.yaml     # Kubernetes Backend Deployment manifest
-├── backend-service.yaml        # Kubernetes Backend Service manifest
-├── redis-deployment.yaml       # Kubernetes Redis Deployment manifest
-├── redis-service.yaml          # Kubernetes Redis Service manifest
-├── docker-compose.yml          # Run Project locally with docker compose
-├── doc                         # Documents Guide
-    └── cicd_document.pdf  
+├── frontend-deployment.yaml               # Kubernetes Frontend Deployment manifest
+├── frontend-service.yaml                  # Kubernetes Frontend Service manifest
+├── backend-deployment.yaml                # Kubernetes Backend Deployment manifest
+├── backend-service.yaml                   # Kubernetes Backend Service manifest
+├── redis-deployment.yaml                  # Kubernetes Redis Deployment manifest
+├── redis-service.yaml                     # Kubernetes Redis Service manifest
+├── docker-compose.yml                     # Run Project locally with docker compose
+├── doc                                    # Documents Guide
+    └──   cicd_document.pdf  
     └──   virtualbox_vagrant_setup.pdf            
     └──   kubernetes_cluster_setup.pdf  
     └──   KubernetesGuide.md  
