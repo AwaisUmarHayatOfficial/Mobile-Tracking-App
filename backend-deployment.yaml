@@ -17,19 +17,31 @@ spec:
         tier: api
     spec:
       containers:
-      - name: backend
-        image: awaisumarhayatofficial/backend:latest
-        imagePullPolicy: Always
-        ports:
-        - name: api-port
-          containerPort: 80
-        env:
-        - name: REDIS_HOST
-          value: "redis" 
-        resources:
-          requests:
-            cpu: "100m"
-            memory: "128Mi"
-          limits:
-            cpu: "250m"
-            memory: "512Mi"
+        - name: backend
+          image: awaisumarhayatofficial/backend:latest
+          imagePullPolicy: Always
+          ports:
+            - name: api-port
+              containerPort: 80
+          env:
+            - name: REDIS_HOST
+              value: "redis"
+          resources:
+            requests:
+              cpu: "100m"
+              memory: "128Mi"
+            limits:
+              cpu: "250m"
+              memory: "512Mi"
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 80
+            initialDelaySeconds: 15
+            periodSeconds: 10
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 80
+            initialDelaySeconds: 5
+            periodSeconds: 5
